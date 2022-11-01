@@ -1,24 +1,15 @@
-import logo from './logo.svg';
+// importacion de archivos
+import NavBar from './assets/components/NavBar/NavBar.js'
+import ItemsList from './assets/components/ItemsList/ItemsList.js';
 import './App.css';
 
+// Se crea la funcion app que muestra despliega nuestra aplicacion.  
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+    <ItemsList name = 'Welcome to Platzza Store'/>
+    </>
   );
 }
 
