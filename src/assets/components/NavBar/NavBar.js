@@ -1,5 +1,6 @@
 // importacion de archivos
 import React, { Component } from 'react'
+import { NavLink,Link } from 'react-router-dom'
 import CartIcon from '../CartIcon/CartIcon'
 import logo from '../../img/logo.png'
 import './NavBar.css'
@@ -15,13 +16,13 @@ class NavBar extends Component {
     // Se crea el menu principal de la pagina con el comprobador de estado. 
     return (
       <div className='nav'>
-          <a href="#"><img src={logo} alt="logo" className='nav__logo' /></a>
+             <Link to="/"><img src={logo} alt="logo" className='nav__logo' /></Link> 
           <ul id = 'navList' className={this.state.clicked ? '#navList active' : '#navList'}>
-              <li><a href='#' className='nav__item'>Clothes</a></li> 
-              <li><a href='#' className='nav__item'>Electronics</a></li>  
-              <li><a href='#' className='nav__item'>furniture</a></li>
-              <li><a href='#' className='nav__item'>Shoes</a></li>   
-              <li><a href='#' className='nav__item'>Others</a></li>      
+              <li><NavLink to = "/category/Clothes" className='nav__item'>Clothes</NavLink> </li>
+              <li><NavLink to = "/category/Electronics" className='nav__item'>Electronics</NavLink></li>   
+              <li><NavLink to = "/category/Furniture" className='nav__item'>Furniture</NavLink></li>
+              <li><NavLink to = "/category/Shoes" className='nav__item'>Shoes</NavLink></li>   
+              <li><NavLink to = "/category/Others" className='nav__item'>Others</NavLink></li>      
           </ul>
           <CartIcon/>
           <div id='mobile' className='nav__btn' onClick={this.handleClick}>

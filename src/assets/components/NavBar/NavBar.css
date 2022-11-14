@@ -47,6 +47,18 @@
     border-radius: 14px;
   }
 
+  .nav__item_inactive {
+    background-color: #fbdbbc;
+    color: black;
+    border-radius: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
   .nav__btn {
     display: none;
   }
