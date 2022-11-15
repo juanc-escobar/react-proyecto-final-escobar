@@ -5,12 +5,12 @@ import { useEffect, useState } from "react"
 
 const ItemDetailContainer = () => {
     const [productSelected, setProductSelected] = useState()
-    const id = useParams();
+    const {id} = useParams();
     const getProduct = () => {
         const productFiltered = data.filter((product) => {
             return product.id == id
         })
-        setProductSelected(productFiltered)
+        setProductSelected(...productFiltered);
     }
 
     useEffect(() => {

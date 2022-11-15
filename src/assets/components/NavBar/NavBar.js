@@ -18,11 +18,11 @@ class NavBar extends Component {
       <div className='nav'>
              <Link to="/"><img src={logo} alt="logo" className='nav__logo' /></Link> 
           <ul id = 'navList' className={this.state.clicked ? '#navList active' : '#navList'}>
-              <li><NavLink to = "/category/Clothes" className='nav__item'>Clothes</NavLink> </li>
-              <li><NavLink to = "/category/Electronics" className='nav__item'>Electronics</NavLink></li>   
-              <li><NavLink to = "/category/Furniture" className='nav__item'>Furniture</NavLink></li>
-              <li><NavLink to = "/category/Shoes" className='nav__item'>Shoes</NavLink></li>   
-              <li><NavLink to = "/category/Others" className='nav__item'>Others</NavLink></li>      
+              <li><NavLink to = "/category/Clothes" className={({isActive})=> { return isActive ? "nav__item_active" : "nav__item"}}>Clothes</NavLink> </li>
+              <li><NavLink to = "/category/Electronics" className={({isActive})=> { return isActive ? "nav__item_active" : "nav__item"}}>Electronics</NavLink></li>   
+              <li><NavLink to = "/category/Furniture" className={({isActive})=> { return isActive ? "nav__item_active" : "nav__item"}}>Furniture</NavLink></li>
+              <li><NavLink to = "/category/Shoes" className={({isActive})=> { return isActive ? "nav__item_active" : "nav__item"}}>Shoes</NavLink></li>   
+              <li><NavLink to = "/category/Others" className={({isActive})=> { return isActive ? "nav__item_active" : "nav__item"}}>Others</NavLink></li>      
           </ul>
           <CartIcon/>
           <div id='mobile' className='nav__btn' onClick={this.handleClick}>

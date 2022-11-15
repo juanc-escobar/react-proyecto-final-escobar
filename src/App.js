@@ -12,8 +12,10 @@ function App() {
   <BrowserRouter>
     <NavBar/>
     <Routes>
-      <Route path="/" element = {<ItemsListContainer name = 'Welcome to Platzza Store'/>} />
-      <Route path="/category/:categoryName" element = {<ItemsListContainer name = "category"/>} />
+      <Route path="/" element = {<ItemsListContainer/>} /> 
+      <Route path="/category/:categoryName" element = {<ItemsListContainer/>}>
+        <Route path="item/:id" element = {<ItemDetailContainer />} />
+      </Route>
       <Route path="/item/:id" element = {<ItemDetailContainer />} />
       <Route path="cart" element = {<CartIcon/>} />
     </Routes>

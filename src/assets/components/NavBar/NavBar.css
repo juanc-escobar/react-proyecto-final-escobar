@@ -47,7 +47,7 @@
     border-radius: 14px;
   }
 
-  .nav__item_inactive {
+  .nav__item_active {
     background-color: #fbdbbc;
     color: black;
     border-radius: 14px;
