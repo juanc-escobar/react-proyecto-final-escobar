@@ -1,7 +1,7 @@
 // importacion de archivos
 import React from 'react'
 import { useEffect, useState } from 'react'
-import {data} from "../data/data"
+import {data} from "../../data/data"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
