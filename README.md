@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# The Platzza Store React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an E-commerce web application, about style store with different categories of clothing and accessories. is built on Fake Store API, Firebase, and React. The main focus of this project is to test the functionality. 
 
-## Available Scripts
+## Navigation 
 
-In the project directory, you can run:
+In the Navbar you can find:
 
-### `npm start`
+### Platzza Store Logo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It Sends you to the Home page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Product Category 
 
-### `npm test`
+There are four main Categories Men's Clothing, Women's Clothing, Jewelry, and Electronics, you can click on the theme to see the products in each category. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Cart Icon
 
-### `npm run build`
+The Cart Icon will show you the checkout page when you are ready to purchase your products. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Products Detail
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All the products that are displayed have more detailed properties if you click on them.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### add button
 
-### `npm run eject`
+You can select the quantity of product you wish to buy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### remove button
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+this button helps you control the number of products you want to buy in case you added more than needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Add to Cart
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+this button adds the number of products selected to your shopping cart. 
 
-## Learn More
+## Check Out
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All the products that are in your cart are displayed in this section.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Empty Cart
 
-### Code Splitting
+this button removes all items from your shopping cart in case you want to start again selecting products. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Create Order
 
-### Analyzing the Bundle Size
+This button displays the form to fill your data to complete your order
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Buy 
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This button confirms your Order and empties your cart.

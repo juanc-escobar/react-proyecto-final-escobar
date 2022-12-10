@@ -48,6 +48,9 @@ const Cart = () => {
           stock: product.stock - product.quantity,
         })
       })
+      alert("Your order has been submited, thanks")
+      clear();
+      showForm();
     }).catch((error) => console.log(error))
     }
   }
@@ -75,7 +78,7 @@ const Cart = () => {
       <div className="total">
         <h2 className="total__title">Total: {total}</h2>
         <div className="btn-layout">
-        <button className="btn-add" onClick={()=> clear()}>Emptry Cart</button>
+        <button className="btn-add" onClick={()=> clear()}>Empty Cart</button>
         <button className="btn-add" onClick={showForm}>Create Order</button>
         </div>
         <div className={show ? "inputs-text" : "inputs-text hide" }>

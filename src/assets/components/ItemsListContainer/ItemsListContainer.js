@@ -1,7 +1,6 @@
 // importacion de archivos
 import React from 'react'
 import { useEffect, useState } from 'react'
-import {data} from "../../data/data"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from 'react-router-dom'
 import {getFirestore, collection, getDocs, query, where} from "firebase/firestore"
@@ -25,7 +24,6 @@ const ItemsListContainer = () => {
         return {id: item.id, ...item.data()}
       })
       setProductList(data)
-      console.log(productList)
     }).catch((error) => {console.log (error)})
 
   }
