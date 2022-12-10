@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import {data} from "../../data/data"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from 'react-router-dom'
+import {getFirestore, collection, getDocs, query, where} from "firebase/firestore"
 import './ItemListContainer.css'
 
 
@@ -12,21 +13,25 @@ const ItemsListContainer = () => {
   const [productList, setProductList] = useState([]);
   const {categoryName} = useParams ();
 
-  const getProducts = new Promise ((resolve) => {
-    setTimeout(()=>{
-      if (categoryName) {
-        const filteredData = data.filter((product)=> {
-          return product.category.name === categoryName
-        })
-        resolve(filteredData)
-      } else {
-        resolve(data)
-      }
-    }, 700)
-  })
+  const getProducts = () => {
+    const db = getFirestore();
+    const queryBase = collection(db, "items")
+    const querySnapshot = categoryName
+
+    ? query(queryBase, where("category","==",categoryName)) : queryBase 
+
+    getDocs(querySnapshot).then((response) => {
+      const data = response.docs.map((item) => {
+        return {id: item.id, ...item.data()}
+      })
+      setProductList(data)
+      console.log(productList)
+    }).catch((error) => {console.log (error)})
+
+  }
 
   useEffect (()=> {
-    getProducts.then(res => setProductList(res)).catch(error => console.log (error))
+    getProducts()
   },[categoryName])
 
     return (
@@ -35,4 +40,5 @@ const ItemsListContainer = () => {
     </div>
   ) 
 }
+
 export default ItemsListContainer

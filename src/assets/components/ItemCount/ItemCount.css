@@ -1,0 +1,16 @@
+.plus {
+margin: 0.5rem;
+position: relative;
+top: -45px;
+left: 120px;
+color: lightskyblue;
+}
+
+.minus {
+    margin: 1rem;
+    position: relative;
+    top: -45px;
+    left: -120px;
+    color: #fbdbbc;
+    color: lightskyblue;
+}

@@ -1,3 +1,8 @@
 i {
  cursor: pointer;   
 }
+
+.cart-number{
+    margin-left: 1rem;
+    color: gray;
+}

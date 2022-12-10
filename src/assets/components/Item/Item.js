@@ -6,10 +6,10 @@ const Item = ({product}) => {
     <div>
         <Link to={`/item/${product.id}`}> 
             <div className='card'>
-                <img className='card__img' alt={product.title} src={product.images[0]} />
-                <h2>{product.title}</h2>
-                <h3>Price: ${product.price}</h3>
-                <h3>Product id: {product.id}</h3>
+                <img className='card__img' alt={product.title} src={product.image} />
+                <h2 className='card__title'>{product.title}</h2>
+                <h3 className='card__content'>Price: ${product.price}</h3>
+                <h3 className='card__content'>Product stock: {product.stock}</h3>
             </div>
         </Link>
     </div>

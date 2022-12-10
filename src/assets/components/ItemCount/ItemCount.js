@@ -5,14 +5,14 @@ const ItemCount = ({setCount}) => {
   
   return (
     <div>
-      <button onClick={() => setCount((currentValue) => currentValue + 1)}>Add</button>
-      <button onClick={() => setCount((currentValue) => {
-        if (currentValue > 0) {
+      <i class="fa-solid fa-plus fa-2x plus" onClick={() => setCount((currentValue) => currentValue + 1)}></i>
+      <i class="fa-solid fa-minus fa-2x minus" onClick={() => setCount((currentValue) => {
+        if (currentValue > 1) {
           return currentValue - 1
         } else {
           return currentValue
         }})
-      }>Remove</button>
+      }></i>
     </div>
   )
 }
