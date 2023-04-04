@@ -1,5 +1,4 @@
 .container {
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -96,9 +95,14 @@
 }
 
 @media screen and (min-width: 1000px) {
+
+    .container {
+        justify-content: flex-start;
+    }
     .cproduct  {
       flex-direction: row;
-      width: 40vw;
+      justify-content: space-evenly;
+      width: 800px;
       gap: 2rem;
     }
 
@@ -108,7 +112,7 @@
     }
 
     .btn-layout {
-        width: 400px;
+        width: 600px;
         font-size: 1.2rem;
         flex-direction:row;
         margin-bottom: 2rem;
