@@ -5,4 +5,11 @@ i {
 .cart-number{
     margin-left: 1rem;
     color: gray;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .cart-number{
+        display: inline-block;
+    }
 }

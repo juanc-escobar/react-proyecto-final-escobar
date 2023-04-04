@@ -1,33 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   .nav {
     border-bottom: 1px solid lightgray;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     color: black;
-    padding: 1rem;
     width: 100%;
+    padding: 9px;
   }
 
   .nav__logo {
-    width: 330px;
+    width: 150px;
   }
 
   #navList {
     display:  flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     list-style: none;
+    position: fixed;
+    top: 100px;
+    right: -300px;
+    width: 250PX;
+    background-color: white;
+    padding: 20px 0px 0px 10px;
+    z-index: 10;
   }
 
   #navList.active {
+    top: 56px;
     right: 0px;
   }
 
@@ -60,7 +64,7 @@
   }
 
   .nav__btn {
-    display: none;
+    display: block;
   }
 
   .nav__btn i {
@@ -68,24 +72,29 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 769px) {
+  
+  @media screen and (min-width: 1200px) {
+
+    .nav {
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     #navList {
-      border: 1px solid lightgray;
-      display:  flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: fixed;
-      top: 151px;
-      right: -300px;
-      width: 250px;
-      background-color: white;
-      padding: 20px 0px 0px 10px;
+      flex-direction: row;
+      justify-content: space-around;
+      position: unset;
+      width: 30vw;
       transition: 0.3s ease-in-out;
-      z-index: 10;
     }
 
     .nav__btn{
-      display: block;
+      display: none;
+    }
+
+    .nav__logo {
+      width: 330px;
     }
   }

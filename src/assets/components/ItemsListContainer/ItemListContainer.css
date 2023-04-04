@@ -1,6 +1,9 @@
 .container {
-    width: 80%;
-    padding: 1rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .msn {

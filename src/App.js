@@ -13,6 +13,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
+      <div className="spa">
         <NavBar/>
         <Routes>
           <Route path="/" element = {<ItemsListContainer/>} /> 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/item/:id" element = {<ItemDetailContainer />} />
           <Route path="cart" element = {<Cart/>} />
         </Routes>
+    </div>
       </BrowserRouter>
     </CartProvider>
   )

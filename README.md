@@ -46,6 +46,6 @@ this button removes all items from your shopping cart in case you want to start 
 
 This button displays the form to fill your data to complete your order
 
-#### Buy 
+### Buy 
 
 This button confirms your Order and empties your cart.
