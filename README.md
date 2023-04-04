@@ -2,6 +2,8 @@
 
 This project is an E-commerce web application, about style store with different categories of clothing and accessories. is built on Fake Store API, Firebase, and React. The main focus of this project is to test the functionality. 
 
+![2022-12-10 17-00-43](https://user-images.githubusercontent.com/107894952/206877222-6e94690c-784f-4671-bb35-61b6bedb58a6.gif)
+
 ## Navigation 
 
 In the Navbar you can find:
